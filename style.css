@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --branco-principal: #ffffff;
+    --cinza-secundario: #c0c0c0 ;
+    --botao-azul: #167bf7;
+    --cor-de-fundo: #01010e;
+    --fonte-principal: 'Inter', sans-serif;
+    --botao-azul-efeito: #3c90f6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+}
+
+.principal {
+    background-image: url("./img/Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 680px;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-family: var(--fonte-principal);
+}
+
+.container_caixa {
+    margin: 0 6rem;
+}
+
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+    margin: 4rem 0rem 2rem 1rem;
+    line-height: 34px;
+}
+
+.container__imagem {
+    margin: 1rem 0rem 2rem 0rem;
+}
+
+.container__botao {
+    text-decoration: none;
+    color: var(--branco-principal);
+    font-weight: 400;
+    background-color: var(--botao-azul);
+    font-size: 1rem;
+    width: 450px;
+    border-radius: 5px;
+    padding: 1rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.botao_secundario {
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+    width: 450px;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.container__aviso {
+    color: var(--cinza-secundario);
+    font-size: 13px;
+    font-family: var(--fonte-principal);
+}
+
+/* Plataformas */
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.container__descricao {
+    padding-right: 10%;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    margin-bottom: 0.5rem;
+}
+
+.descricao__paragrafo {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--cinza-secundario);
+    font-family: var(--fonte-principal);
+}
+
+/* Assinatura do combo+*/
+
+.secundario__botao {
+    display: inline-block;
+    width: 140px;
+    margin-top: 1.5rem;
+}
+
+.dispositivos__titulo {
+    font-size: 44px;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5rem 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.lista__item {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--fonte-principal);
+}
+
+/*Footer*/
+
+.rodape {
+    text-align: center;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    color: var(--branco-principal);
+}
+
+.lista__links {
+    margin: 2rem 0.7rem;
+    font-family: var(--fonte-principal);
+}
+
+
+.rodape__texto {
+    font-family: var(--fonte-principal);
+    color: var(--cinza-secundario);
+    margin: 1rem;
+    font-size: 14px;
+}
+a {
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+
+.lista__links a:hover {
+    color: var(--botao-azul);
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
